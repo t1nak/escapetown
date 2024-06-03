@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <!-- Load Django static files -->
+    {% load static %}
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'landing_page/css/index.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'landing_page/css/custom.css' %}"> -->
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sea Point Accommodation - Discover Cape Town's finest luxury apartments with no electricity cuts, located in the vibrant Sea Point suburb.">
+    <meta name="keywords" content="Sea Point, Cape Town, accommodation, luxury apartments, no electricity cuts">
+    <meta name="author" content="Sea Point Accommodation">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Sea Point Accommodation">
+    <meta property="og:description" content="Discover Cape Town's finest luxury apartments in Sea Point.">
+    <meta property="og:image" content="{% static 'landing_page/images/cpt/13.jpg' %}">
+    <meta property="og:url" content="http://example.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'landing_page/images/fav2.png' %}" type="image/x-icon">
+    
+    <title>  esCape Town </title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    {% include 'landing_page/includes/navbar.html' %}
+    
+    <!-- Intro Section -->
+    {% include 'landing_page/includes/intro.html' %}
+    
+    <!-- Details Section
+    {% include 'landing_page/includes/details.html' %}
+     -->
+  
+    <!-- Footer -->
+    {% include 'landing_page/includes/footer.html' %}
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html>

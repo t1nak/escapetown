@@ -1,0 +1,60 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>Hi there, <strong>{{ request.user }}</strong>.</h1>
+<p>Welcome to the dashboard!</p>
+
+<p><strong style="color:red;">See your favourite posts here, concatenate them into a printable PDF.</strong></p>
+
+<form id="favorites-form" method="post" action="{% url 'dashboard:print_pdf_with_selection' %}">
+    {% csrf_token %}
+    <!-- Include the table section -->
+    {% include 'dashboard/includes/table_section.html' %}
+
+    <h2>My Favorites</h2>
+    <form id="favorites-form" method="post" action="{% url 'dashboard:print_pdf_with_selection' %}">
+        {% csrf_token %}
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Type</th>
+                    <th>Title</th>
+                    <th>Date Added</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for favorite in favorites %}
+                <tr>
+                    <td><input type="checkbox" name="selected_items" value="{{ favorite.id }}"></td>
+                    <td>
+                        {% if favorite.itinerary %}Itinerary{% endif %}
+                        {% if favorite.place_to_stay %}Place to Stay{% endif %}
+                        {% if favorite.cultural_activity %}Cultural Activity{% endif %}
+                        {% if favorite.blog_post %}Blog Post{% endif %}
+                    </td>
+                    <td>
+                        {% if favorite.itinerary %}<a href="{% url 'products:itinerary_detail' favorite.itinerary.id %}">{{ favorite.itinerary.name }}</a>{% endif %}
+                        {% if favorite.place_to_stay %}<a href="#">{{ favorite.place_to_stay.name }}</a>{% endif %}
+                        {% if favorite.cultural_activity %}<a href="#">{{ favorite.cultural_activity.name }}</a>{% endif %}
+                        {% if favorite.blog_post %}<a href="#">{{ favorite.blog_post.title }}</a>{% endif %}
+                    </td>
+                    <td>{{ favorite.created_at }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="btn-group">
+            <button type="submit" class="btn btn-primary">Print PDF with Selection</button>
+            <button type="button" class="btn btn-danger" id="delete-selected">Delete Selected</button>
+        </div>
+    </form>
+ 
+   
+<p>To log out, click <a href="{% url 'accounts:logout' %}">here</a></p>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="{% static 'print_pdf.js' %}"></script>
+<script src="{% static 'delete_selected.js' %}"></script>
+{% endblock %}

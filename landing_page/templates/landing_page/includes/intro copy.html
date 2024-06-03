@@ -1,0 +1,48 @@
+<!-- templates/landing_page/includes/intro.html -->
+{% load static %}
+<section id="intro">
+
+    <link rel="stylesheet" href="{% static 'landing_page/css/custom.css' %}">
+
+    <div class="container-lg">
+            <div class="col-sm-8 col-lg-6 text-center mx-auto">
+                <h2>Discover Cape Town</h2>
+
+            </div>
+             <p class="lead text-justify">
+                We are delighted to have you here. This site is dedicated to helping you explore the beauty and excitement of Cape Town.
+                 Whether you are looking for adventure, relaxation, or cultural experiences, we have got you covered. 
+                 You can  <a href=" {% url 'accounts:register' %}">  become a member</a> or                  
+                 <a class="btn btn-primary rounded-pill" href="{% url 'accounts:login' %}">log-in</a> to discover an exquisite selection of itineraries and places to visit, stay, and dine in Cape Town. Completely free of charge.
+
+
+            </p>
+            <p class="lead text-justify">
+                <span class="spacer"></span>
+            </p>
+ 
+     <!-- Two Columns with Images and Descriptions -->
+     <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{% static 'landing_page/images/woah.png' %}" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                    <h5 class="card-title">Exciting Adventures</h5>
+                    <p class="card-text">Explore the most thrilling adventures Cape Town has to offer, from hiking trails to extreme sports.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{% static 'landing_page/images/cpt/13.jpg' %}" class="card-img-top" alt="Image 2">
+                <div class="card-body">
+                    <h5 class="card-title">Cultural Experiences</h5>
+                    <p class="card-text">Immerse yourself in the rich cultural heritage of Cape Town, visiting historical sites and local markets.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="div-behind"></div>
+    </div>
+</section>

@@ -1,0 +1,19 @@
+/* static/css/custom.css */
+/* Custom styles for hover effect */
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.text-justify {
+    text-align: justify;
+}
+.spacer {
+    display: inline-block;
+    width: 1em;  /* Adjust the width to match the space created by "&:" */
+    height: 0;  /* Ensures the span does not affect the line height */
+}

@@ -1,0 +1,13 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+
+ 
+{% block title %}Logout{% endblock %}
+
+{% block form %}
+<div class="logout-container border p-4 rounded bg-light">
+    <h2 class="text-center mb-4">You have been logged out.</h2>
+    <a href="{% url 'login' %}" class="btn btn-primary w-100">Login Again</a>
+</div>
+{% endblock form %}
+{% endblock %}

@@ -1,0 +1,26 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <title>Itineraries</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'markdownx/css/markdownx.css' %}">
+</head>
+<body>
+    <h1>Itineraries</h1>
+    <ul>
+        {% for itinerary in itineraries %}
+            <li>
+                <h2><a href="{% url 'products:itinerary_detail' itinerary.pk %}">{{ itinerary.name }} ({{ itinerary.get_days_display }})</a></h2>
+                <p><strong>Intro:</strong> {{ itinerary.intro }}</p>
+                <p><strong>Covered Highlights:</strong> {{ itinerary.covered_highlights }}</p>
+                {% if itinerary.image %}
+                    <p><strong>Image:</strong> <img src="{{ itinerary.image.url }}" alt="Itinerary Image" style="max-width: 200px;"></p>
+                {% endif %}
+            
+            </li>
+        {% endfor %}
+    </ul>
+    <script src="{% static 'markdownx/js/markdownx.js' %}"></script>
+</body>
+</html> -->

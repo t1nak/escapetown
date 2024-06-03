@@ -1,0 +1,24 @@
+{% load custom_filters %}
+<div>
+    <h1>{{ itinerary.name }} ({{ itinerary.get_days_display }})</h1>
+    <p><strong>Intro:</strong> {{ itinerary.intro }}</p>
+    <p><strong>Covered Highlights:</strong> {{ itinerary.covered_highlights|render_markdown  }}</p>
+    <div>
+        <strong>Details:</strong>
+        {{ itinerary.details|render_markdown }}
+    </div>
+    <!-- {% if itinerary.image %}
+        <p><strong>Image:</strong> <img src="{{ itinerary.image.url }}" alt="Itinerary Image" style="max-width: 400px;"></p> -->
+    {% endif %}
+    {% if itinerary.pdf %}
+        <p><strong>Download PDF:</strong> <a href="{{ itinerary.pdf.url }}">Download</a></p>
+    {% endif %}
+    {% if itinerary.gmail_link %}
+        <p><strong>Gmail Link:</strong> <a href="{{ itinerary.gmail_link }}">Open Gmail</a></p>
+    {% endif %}
+    {% if itinerary.tags %}
+        <p><strong>Tags:</strong> {{ itinerary.tags }}</p>
+    {% endif %}
+    <a href="{% url 'products:add_to_favorites' 'itinerary' itinerary.id %}" class="btn btn-primary">Add to Favorites</a>
+    <a href="javascript:void(0);" onclick="document.getElementById('itinerary-detail').innerHTML = '';">Back to Itinerary List</a>
+</div>

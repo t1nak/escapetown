@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album</title>
+    {% load static %}
+    <link href="{% static 'photos/css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    {% include 'landing_page/includes/navbar.html' %}
+    <div class="container py-5">
+        <h1 class="text-center">Album {{ album_id }}</h1>
+        <!-- Add album content here -->
+    </div>
+    {% include 'landing_page/includes/footer.html' %}
+</body>
+
+</html>

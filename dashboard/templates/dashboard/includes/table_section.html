@@ -1,0 +1,56 @@
+{% load static %}
+<div class="row mb-4">
+    <div class="col-md-7">
+        <div class="card h-100">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <img src="{% static 'landing_page/images/woah.png' %}" class="card-img hover-effect" alt="Itineraries">
+                </div>
+                <div class="col-12">
+                    <div class="card-body">
+                        <a href="{% url 'products:itinerary_list' %}" class="text-decoration-none">
+                            <h5 class="card-title">Itineraries</h5>
+                        </a>
+                        <p class="card-text">Check out these itineraries for your 3-day, 5-day, and 7-day stays in Cape Town and get some tips and tricks.</p>
+                        <p class="card-text">
+                            <small class="text-muted">Explore our curated itineraries to make the most of your time in Cape Town. Whether you're here for a short visit or a longer stay, our itineraries offer a perfect blend of activities, sightseeing, and relaxation.</small>
+                        </p>
+                        <p class="card-text">
+                            <a href="{% url 'products:itinerary_list' %}" class="btn btn-primary">Click here to view more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Table Layout -->
+    <div class="col-md-4">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Adventure</td>
+                    <td>Explore the thrilling outdoor activities in Cape Town.</td>
+                </tr>
+                <tr>
+                    <td>Relaxation</td>
+                    <td>Find the best spots for a peaceful and relaxing time.</td>
+                </tr>
+                <tr>
+                    <td>Culture</td>
+                    <td>Discover the rich cultural heritage and history of Cape Town.</td>
+                </tr>
+                <tr>
+                    <td>Dining</td>
+                    <td>Enjoy the finest dining experiences in the city.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

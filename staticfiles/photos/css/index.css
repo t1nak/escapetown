@@ -1,0 +1,19 @@
+section {
+    padding: 60px 0;
+}
+
+.crop {
+    width: 1000px; /* width of container */
+    height: 400px; /* height of container */
+    object-fit: cover;
+}
+
+.div-behind {
+    z-index: -9;
+    position: absolute;
+    background: #dee7e8;
+    top: 60%;
+    left: 5%;
+    width: 90%;
+    height: 105%;
+  }

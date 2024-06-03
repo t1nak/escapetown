@@ -1,0 +1,94 @@
+{% load static %}
+{% load i18n %}
+<section id="intro">
+    <style>
+        .hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-effect:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-spacing {
+            margin: 10px; /* Adjust the value as needed for spacing on all sides */
+        }
+    </style>
+
+    <link rel="stylesheet" href="{% static 'landing_page/css/custom.css' %}">
+
+    <div class="container-lg">
+        <div class="text-center mx-auto my-4">
+            <h2>{% trans "Discover Cape Town" %}</h2>
+            <!-- Spacer Row -->
+            <div class="row mb-4"></div>
+            <p class="lead text-justify">
+                {% trans "We are delighted to have you here. This site is dedicated to helping you explore the beauty and excitement of Cape Town. Whether you are looking for adventure, relaxation, or cultural experiences, we have got you covered. You can" %}
+                <a href="{% url 'accounts:register' %}">{% trans "become a member" %}</a>
+                {% trans "or" %}
+                <a class="btn btn-primary rounded-pill" href="{% url 'accounts:login' %}">{% trans "log in" %}</a>
+                {% trans "to discover an exquisite selection of itineraries and places to visit, stay, and dine in Cape Town. Completely free of charge." %}
+            </p>
+        </div>
+        <!-- Spacer Row -->
+
+        <div class="row mb-4"></div>
+        <!-- First Row with Images and Descriptions -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card h-100">
+                    <div class="row no-gutters">
+                        <div class="col-md-9">
+                            <img src="{% static 'landing_page/images/woah.png' %}" class="card-img hover-effect" alt="{% trans "Itineraries" %}">
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card-body">
+                                <a href="{% url 'products:itinerary_list' %}" class="text-decoration-none">
+                                    <h5 class="card-title">{% trans "Itineraries" %}</h5>
+                                </a>
+                                <p class="card-text">{% trans "Check out these itineraries for your 3-day, 5-day, and 7-day stays in Cape Town and get some tips and tricks." %}</p>
+                                <p class="card-text">
+                                    <small class="text-muted">{% trans "Explore our curated itineraries to make the most of your time in Cape Town. Whether you're here for a short visit or a longer stay, our itineraries offer a perfect blend of activities, sightseeing, and relaxation." %}</small>
+                                </p>
+                                <p class="card-text">
+                                    <a href="{% url 'products:itinerary_list' %}" class="card-img-top hover-effect">{% trans "Click here" %}</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spacer Row -->
+        <div class="row mb-5"></div>
+
+        <!-- Second Row with Images and Descriptions -->
+        <div class="row g-4">
+            <div class="col-md-7 card-spacing">
+                <div class="card h-100">
+                    <img src="{% static 'landing_page/images/cpt/13.jpg' %}" class="card-img-top hover-effect" alt="{% trans "Where to Stay" %}">
+                    <div class="card-body">
+                        <h5 class="card-title">{% trans "Where to Stay" %}</h5>
+                        <p class="card-text">{% trans "Find the best places to stay based on your search criteria." %}</p>
+                        <p class="card-text">
+                            <small class="text-muted">{% trans "We assist you in finding the ideal location based on your preferences. Whether you are seeking romantic hotels for couples, accommodations with breathtaking views, or family-friendly venues, we provide detailed recommendations to suit your needs. Explore our curated lists to ensure a memorable stay in Cape Town." %}</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 card-spacing">
+                <div class="card h-100">
+                    <img src="{% static 'landing_page/images/cult1.JPG' %}" class="card-img-top hover-effect" alt="{% trans "Cultural Experiences" %}">
+                    <div class="card-body">
+                        <h5 class="card-title">{% trans "Cultural Experiences" %}</h5>
+                        <p class="card-text">{% trans "Immerse yourself in the rich cultural heritage of Cape Town, visiting historical sites and local markets." %}</p>
+                    </div>
+                    <img src="{% static 'landing_page/images/cult2.JPG' %}" class="card-img-top hover-effect" alt="{% trans "Cultural Experiences" %}">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div-behind"></div>
+</section>

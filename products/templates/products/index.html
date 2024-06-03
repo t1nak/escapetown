@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}{% load custom_filters %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <!-- Load Django static files -->
+    {% load static %}
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'landing_page/css/index.css' %}">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sea Point Accommodation - Discover Cape Town's finest luxury apartments with no electricity cuts, located in the vibrant Sea Point suburb.">
+    <meta name="keywords" content="Sea Point, Cape Town, accommodation, luxury apartments, no electricity cuts">
+    <meta name="author" content="Sea Point Accommodation">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Sea Point Accommodation">
+    <meta property="og:description" content="Discover Cape Town's finest luxury apartments in Sea Point.">
+    <meta property="og:image" content="{% static 'landing_page/images/cpt/13.jpg' %}">
+    <meta property="og:url" content="http://example.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'landing_page/images/fav2.png' %}" type="image/x-icon">
+    
+    <title>Itineraries</title>
+</head>
+<body>
+    {% include 'landing_page/includes/navbar.html' %}
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Itineraries</h1>
+        <div class="row">
+            <!-- Itineraries List Column -->
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    {% for itinerary in itineraries %}
+                        <li class="mb-4">
+                            <h3><a href="javascript:void(0);" onclick="loadItineraryDetails('{{ itinerary.pk }}')">{{ itinerary.name }} ({{ itinerary.get_days_display }})</a></h3>
+                            <p><strong>In a nutshell:</strong> {{ itinerary.intro }}</p>
+                            <p><strong>Highlights:</strong> {{ itinerary.covered_highlights |render_markdown }}</p>
+                            {% if itinerary.image %}
+                                <p><img src="{{ itinerary.image.url }}" alt="Itinerary Image" class="img-fluid" style="max-width: 200px;"></p>
+                            {% endif %}
+                            <!-- <p><em>{{ itinerary.created_at }}</em></p> -->
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <!-- Itinerary Details Column -->
+            <div class="col-md-6" id="itinerary-detail">
+                <!-- Itinerary details will be loaded here -->
+            </div>
+        </div>
+    </div>
+    {% include 'landing_page/includes/footer.html' %}
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGzUwJxQ3NE3eJkL8aK4d92HcaZpD91BtvGf6QSKfIt+h" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-pZjw8f+ua7Kw1TIqVioWmvnKk4V7vPRAfKDJGqZrGXKnhcDZ5k4s7PRTNT+G2Ap7" crossorigin="anonymous"></script>
+    
+    <script>
+        function loadItineraryDetails(itineraryId) {
+            fetch(`/products/itineraries/${itineraryId}/`)
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('itinerary-detail').innerHTML = html;
+                })
+                .catch(error => console.warn('Error loading itinerary details:', error));
+        }
+    </script>
+</body>
+</html>
