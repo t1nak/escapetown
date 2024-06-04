@@ -3,11 +3,11 @@ from django.db import models
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 
-  
 class User(AbstractUser):
     email = models.EmailField(unique=True)
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
+    has_paid_print_pdf = models.BooleanField(default=False)  # New field added
 
     groups = models.ManyToManyField(
         Group,

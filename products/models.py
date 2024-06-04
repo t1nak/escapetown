@@ -31,11 +31,25 @@ class TravelPreference(models.Model):
         return f"Preferences for {self.user.first_name} {self.user.last_name}"
 
 
+
 class Itinerary(models.Model):
     DAYS_CHOICES = [
         (3, '3-Day'),
         (5, '5-Day'),
         (7, '7-Day'),
+        (14, '14-Day'),
+    ]
+
+    TRAVEL_MODE_CHOICES = [
+        ('solo', 'Solo'),
+        ('couple', 'Couple'),
+        ('family', 'Family'),
+        ('other', 'Other'),
+    ]
+
+    TRAVEL_BUDGET_CHOICES = [
+        ('economy', 'Economy'),
+        ('business', 'Business'),
     ]
 
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
@@ -51,12 +65,21 @@ class Itinerary(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    # New fields
+    country = models.CharField(max_length=255)
+    city = models.CharField(max_length=255)
+    travel_mode = models.CharField(max_length=10, choices=TRAVEL_MODE_CHOICES)
+    travel_budget = models.CharField(max_length=10, choices=TRAVEL_BUDGET_CHOICES)
+    travel_regions = models.TextField(blank=True)  # To add districts and other location names
+    
+   
     class Meta:
         verbose_name = _("Itinerary")
         verbose_name_plural = _("Itineraries")
 
     def __str__(self):
         return f"{self.name} ({self.get_days_display()}) for {self.user.get_full_name()}"
+
 
 class PlaceToStay(models.Model):
     # existing fields
