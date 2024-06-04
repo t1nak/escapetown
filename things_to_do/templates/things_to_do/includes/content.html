@@ -1,40 +1,37 @@
 <!-- templates/things_to_do/includes/content.html -->
 {% load static %}
- 
-<section id="content" class="py-5">
-        <div class="container">
-            <div class="row justify-content-center mb-4">
-                <div class="col-sm-8 text-center">
-                    <h1 class="display-4">Lion's Head</h1>
-                    <p class="lead">Experience the breathtaking views from the iconic Lion's Head mountain in Cape Town.</p>
-                </div>
-            </div>
-            <div class="row justify-content-center mb-4">
-                <div class="col-md-6">
-                    <img src="{% static 'things_to_do/images/cpt/tina-lh.jpg' %}" class="img-fluid rounded shadow" alt="Lion's Head">
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-sm-8">
-                    <p class="text-center mb-4"> 
-                        Lion's Head is a popular hiking destination located between Table Mountain and Signal Hill in Cape Town, South Africa. The peak forms part of a dramatic backdrop to the city and provides panoramic views of Cape Town, the Atlantic Seaboard, and the surrounding mountain ranges. The hike to the summit is moderately challenging, with some sections requiring light climbing. However, the effort is well worth it, as hikers are rewarded with stunning vistas and the opportunity to witness the sunrise or sunset from one of the most picturesque spots in the region. Whether you are an avid hiker or just looking for a memorable outdoor experience, Lion's Head is a must-visit. Remember to bring water, wear appropriate footwear, and take your time to enjoy the natural beauty along the trail.</p>
-                </div>
-            </div>
-    <div class="container-lg">
-    
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-sm-5 col-lg-4 text-center">
-                <p class="lead"> </p>
-            </div>
-        </div>
+{% load i18n %}
 
-        <div class="row justify-content-center">
-            <div class="col-sm-5 col-lg-4 text-center">
-                <p class="lead"> </p>
+<section id="content" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center mb-4">
+            <div class="col-sm-8 text-center">
+                <h1 class="display-4">{% trans "Lion's Head" %}</h1>
+                <p class="lead">{% trans "Experience the breathtaking views from the iconic Lion's Head mountain in Cape Town." %}</p>
             </div>
         </div>
- 
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-6">
+                <img src="{% static 'things_to_do/images/cpt/tina-lh.jpg' %}" class="img-fluid rounded shadow" alt="{% trans "Lion's Head" %}">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-8">
+                <p class="text-center mb-4">{% trans "Lion's Head is a popular hiking destination located between Table Mountain and Signal Hill in Cape Town, South Africa. The peak forms part of a dramatic backdrop to the city and provides panoramic views of Cape Town, the Atlantic Seaboard, and the surrounding mountain ranges. The hike to the summit is moderately challenging, with some sections requiring light climbing. However, the effort is well worth it, as hikers are rewarded with stunning vistas and the opportunity to witness the sunrise or sunset from one of the most picturesque spots in the region. Whether you are an avid hiker or just looking for a memorable outdoor experience, Lion's Head is a must-visit. Remember to bring water, wear appropriate footwear, and take your time to enjoy the natural beauty along the trail." %}</p>
+            </div>
+        </div>
+        <div class="container-lg">
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-5 col-lg-4 text-center">
+                <p class="lead"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-5 col-lg-4 text-center">
+                <p class="lead"></p>
+            </div>
+        </div>
     </div>
     <div class="div-behind"></div>
 </section>

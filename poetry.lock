@@ -278,6 +278,20 @@ Markdown = "*"
 Pillow = "*"
 
 [[package]]
+name = "django-modeltranslation"
+version = "0.19.3"
+description = "Translates Django models using a registration approach."
+optional = false
+python-versions = "*"
+files = [
+    {file = "django_modeltranslation-0.19.3-py3-none-any.whl", hash = "sha256:0c8aa2eedf44f1c7c4d4eb99ede8993e152f14b00edcb3de32d43c895aa5c016"},
+    {file = "django_modeltranslation-0.19.3.tar.gz", hash = "sha256:0670cb1b09cbd8069f2829d95e5eabfe17d62b5eaed0a34011f5554d04f5d5e8"},
+]
+
+[package.dependencies]
+Django = ">=4.2"
+
+[[package]]
 name = "django-tailwind"
 version = "3.6.0"
 description = "Tailwind CSS Framework for Django projects"
@@ -877,4 +891,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "d9a1b0197e3108a6f9e4c0fafc250b69af0d23810d194ffb7c4668eb22b70641"
+content-hash = "0a1bc2042e575e590ad06e27ef0de5c4dfbf3d1eced4b48439e0bda7dd6e5b7e"

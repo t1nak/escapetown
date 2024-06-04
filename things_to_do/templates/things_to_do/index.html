@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
+{% load i18n %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Things to Do</title>
+    <title>{% trans "Things to Do" %}</title>
     <link href="{% static 'things_to_do/css/style.css' %}" rel="stylesheet">
 </head>
 
 <body>
     {% include 'landing_page/includes/navbar.html' %}
     <div class="container">
-        <h1>Things to Do</h1>
+        <h1>{% trans "Things to Do" %}</h1>
         <ul>
             <li><a href="{% url 'things_to_do:activity_detail' 'lions-head' %}">Lion's Head</a></li>
             <li><a href="{% url 'things_to_do:activity_detail' 'product2' %}">Product 2</a></li>

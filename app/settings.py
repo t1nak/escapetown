@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django_browser_reload',
+    'modeltranslation',
     'theme',
     'markup',
     'tailwind',
@@ -139,10 +140,14 @@ LANGUAGES = [
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
     os.path.join(BASE_DIR, 'landing_page', 'locale'),
-
+    os.path.join(BASE_DIR, 'dashboard', 'locale'),
+    os.path.join(BASE_DIR, 'products', 'locale'),
+    os.path.join(BASE_DIR, 'things_to_do', 'locale'),
+    os.path.join(BASE_DIR, 'accounts', 'locale'),
 )
-print(LOCALE_PATHS)
+ 
 
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
 
 TIME_ZONE = 'UTC'
 

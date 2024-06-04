@@ -4,6 +4,7 @@ from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 from django.conf import settings
 from markdownx.models import MarkdownxField
+from django.utils.translation import gettext_lazy as _
 
 
 class BlogPost(models.Model):
@@ -41,7 +42,6 @@ class Itinerary(models.Model):
     name = models.CharField(max_length=255)
     days = models.IntegerField(choices=DAYS_CHOICES)
     intro = models.TextField()  # New intro field
-    # covered_highlights = models.TextField()  # 
     covered_highlights = MarkdownxField(default='')
     details = MarkdownxField(default='')  
     image = models.ImageField(upload_to='itinerary_images/', blank=True, null=True)
@@ -51,9 +51,12 @@ class Itinerary(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        verbose_name = _("Itinerary")
+        verbose_name_plural = _("Itineraries")
+
     def __str__(self):
         return f"{self.name} ({self.get_days_display()}) for {self.user.get_full_name()}"
-
 
 class PlaceToStay(models.Model):
     # existing fields

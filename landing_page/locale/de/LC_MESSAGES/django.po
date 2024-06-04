@@ -29,7 +29,7 @@ msgid ""
 "adventure, relaxation, or cultural experiences, we have got you covered. You "
 "can"
 msgstr ""
-"Wir freuen uns, dass Sie hier sind. Diese Seite ist darauf ausgelegt, Ihnen "
+"Willkommen! Diese Seite ist darauf ausgelegt, Ihnen "
 "zu helfen, die Schönheit von Kapstadt zu entdecken. Egal, ob Sie nach "
 "Abenteuer, Entspannung oder kulturellen Erlebnissen suchen, wir können Ihnen "
 "mit Tips und Insiderwissen zur Seite stehen. Sie können"
@@ -44,7 +44,7 @@ msgstr "oder"
 
 #: landing_page/templates/landing_page/includes/intro.html:30
 msgid "log in"
-msgstr "einloggen"
+msgstr "sich einloggen"
 
 #: landing_page/templates/landing_page/includes/intro.html:31
 msgid ""
