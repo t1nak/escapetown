@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-05 09:23+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: things_to_do/templates/things_to_do/includes/content.html:9
+#: things_to_do/templates/things_to_do/includes/content.html:15
+msgid "Lion's Head"
+msgstr "cabeza de león"
+
+#: things_to_do/templates/things_to_do/includes/content.html:10
+msgid ""
+"Experience the breathtaking views from the iconic Lion's Head mountain in "
+"Cape Town."
+msgstr ""
+"Experimente las impresionantes vistas desde la emblemática montaña Lion's "
+"Head en Ciudad del Cabo."
+
+#: things_to_do/templates/things_to_do/includes/content.html:20
+msgid ""
+"Lion's Head is a popular hiking destination located between Table Mountain "
+"and Signal Hill in Cape Town, South Africa. The peak forms part of a "
+"dramatic backdrop to the city and provides panoramic views of Cape Town, the"
+" Atlantic Seaboard, and the surrounding mountain ranges. The hike to the "
+"summit is moderately challenging, with some sections requiring light "
+"climbing. However, the effort is well worth it, as hikers are rewarded with "
+"stunning vistas and the opportunity to witness the sunrise or sunset from "
+"one of the most picturesque spots in the region. Whether you are an avid "
+"hiker or just looking for a memorable outdoor experience, Lion's Head is a "
+"must-visit. Remember to bring water, wear appropriate footwear, and take "
+"your time to enjoy the natural beauty along the trail."
+msgstr ""
+"Lion's Head es un popular destino de senderismo ubicado entre Table Mountain"
+" y Signal Hill en Ciudad del Cabo, Sudáfrica. El pico forma parte de un "
+"espectacular telón de fondo de la ciudad y ofrece vistas panorámicas de "
+"Ciudad del Cabo, la costa atlántica y las cadenas montañosas circundantes. "
+"La caminata hasta la cima es moderadamente desafiante, con algunas secciones"
+" que requieren una escalada ligera. Sin embargo, el esfuerzo vale la pena, "
+"ya que los excursionistas se ven recompensados ​​con vistas impresionantes y"
+" la oportunidad de presenciar el amanecer o el atardecer desde uno de los "
+"lugares más pintorescos de la región. Si eres un ávido excursionista o "
+"simplemente buscas una experiencia memorable al aire libre, Lion's Head es "
+"una visita obligada. Recuerda llevar agua, usar calzado adecuado y tómate tu"
+" tiempo para disfrutar de la belleza natural a lo largo del sendero."
+
+#: things_to_do/templates/things_to_do/index.html:7
+#: things_to_do/templates/things_to_do/index.html:14
+msgid "Things to Do"
+msgstr "Cosas para hacer"

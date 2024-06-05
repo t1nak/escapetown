@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-05 09:24+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: dashboard/templates/dashboard/index.html:6
+msgid "Hi there, "
+msgstr "Hoi,"
+
+#: dashboard/templates/dashboard/index.html:7
+msgid "Welcome to the dashboard!"
+msgstr "Welkom op het dashboard!"
+
+#: dashboard/templates/dashboard/index.html:9
+msgid "See your favourite posts here, concatenate them into a printable PDF."
+msgstr ""
+"Bekijk hier uw favoriete berichten en voeg ze samen in een afdrukbare PDF."
+
+#: dashboard/templates/dashboard/index.html:16
+msgid "My Favorites"
+msgstr "Mijn favorieten"
+
+#: dashboard/templates/dashboard/index.html:22
+msgid "Select"
+msgstr "Selecteer"
+
+#: dashboard/templates/dashboard/index.html:23
+msgid "Type"
+msgstr "Type"
+
+#: dashboard/templates/dashboard/index.html:24
+msgid "Title"
+msgstr "Titel"
+
+#: dashboard/templates/dashboard/index.html:25
+msgid "Date Added"
+msgstr "Datum toegevoegd"
+
+#: dashboard/templates/dashboard/index.html:33
+msgid "Itinerary"
+msgstr "Routebeschrijving"
+
+#: dashboard/templates/dashboard/index.html:34
+msgid "Place to Stay"
+msgstr "Plek om te blijven"
+
+#: dashboard/templates/dashboard/index.html:35
+msgid "Cultural Activity"
+msgstr "Culturele activiteit"
+
+#: dashboard/templates/dashboard/index.html:36
+msgid "Blog Post"
+msgstr "Blogpost"
+
+#: dashboard/templates/dashboard/index.html:50
+msgid "Print PDF with Selection"
+msgstr "Print PDF met selectie"
+
+#: dashboard/templates/dashboard/index.html:51
+msgid "Delete Selected"
+msgstr "Verwijder geselecteerde"
+
+#: dashboard/templates/dashboard/index.html:55
+msgid "To log out, click "
+msgstr "Om uit te loggen, klikt u op"
+
+#: dashboard/templates/dashboard/index.html:55
+msgid "here"
+msgstr "hier"
+
+#: dashboard/templates/dashboard/index.html:69
+msgid "Please select at least one item."
+msgstr "Selecteer minimaal één item."
+
+#: dashboard/templates/dashboard/index.html:87
+#: dashboard/templates/dashboard/index.html:127
+msgid "AJAX Error: "
+msgstr "AJAX-fout:"
+
+#: dashboard/templates/dashboard/index.html:101
+msgid "Selected items to delete: "
+msgstr "Geselecteerde items om te verwijderen:"
+
+#: dashboard/templates/dashboard/index.html:104
+msgid "Please select at least one item to delete."
+msgstr "Selecteer ten minste één item om te verwijderen."
+
+#: dashboard/templates/dashboard/index.html:108
+msgid "Are you sure you want to delete the selected items?"
+msgstr "Weet u zeker dat u de geselecteerde items wilt verwijderen?"
+
+#: dashboard/templates/dashboard/index.html:123
+msgid "There was an error deleting the selected items."
+msgstr ""
+"Er is een fout opgetreden bij het verwijderen van de geselecteerde items."

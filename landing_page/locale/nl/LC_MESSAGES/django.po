@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-05 09:23+0200\n"
+"POT-Creation-Date: 2024-06-05 09:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: landing_page/templates/landing_page/includes/intro.html:23
 msgid "Discover Cape Town"
-msgstr "Entdecken Sie Kapstadt"
+msgstr "Ontdek Kaapstad"
 
 #: landing_page/templates/landing_page/includes/intro.html:27
 msgid ""
@@ -29,46 +29,45 @@ msgid ""
 "adventure, relaxation, or cultural experiences, we have got you covered. You"
 " can"
 msgstr ""
-"Willkommen! Diese Seite ist darauf ausgelegt, Ihnen zu helfen, die Schönheit"
-" von Kapstadt zu entdecken. Egal, ob Sie nach Abenteuer, Entspannung oder "
-"kulturellen Erlebnissen suchen, wir können Ihnen mit Tips und Insiderwissen "
-"zur Seite stehen. Sie können"
+"Wij zijn blij dat u hier bent. Deze site is bedoeld om u te helpen de "
+"schoonheid en opwinding van Kaapstad te ontdekken. Of u nu op zoek bent naar"
+" avontuur, ontspanning of culturele ervaringen, wij hebben wat u zoekt. Jij "
+"kan"
 
 #: landing_page/templates/landing_page/includes/intro.html:28
 msgid "become a member"
-msgstr "Mitglied werden"
+msgstr "lid worden"
 
 #: landing_page/templates/landing_page/includes/intro.html:29
 msgid "or"
-msgstr "oder"
+msgstr "of"
 
 #: landing_page/templates/landing_page/includes/intro.html:30
 msgid "log in"
-msgstr "sich einloggen"
+msgstr "Log in"
 
 #: landing_page/templates/landing_page/includes/intro.html:31
 msgid ""
 "to discover an exquisite selection of itineraries and places to visit, stay,"
 " and dine in Cape Town. Completely free of charge."
 msgstr ""
-"um eine exquisite Auswahl an Reiserouten und Orten zu entdecken, mit der Sie"
-" Kapstadt und Umgebung geniessen können."
+"om een ​​voortreffelijke selectie van routes en plaatsen te ontdekken om te "
+"bezoeken, te verblijven en te dineren in Kaapstad. Volledig gratis."
 
 #: landing_page/templates/landing_page/includes/intro.html:43
 #: landing_page/templates/landing_page/includes/intro.html:48
 #: ⁨landing_page/templates/landing_page/includes/navbar copy.html⁩:26
 #: landing_page/templates/landing_page/includes/navbar.html:24
 msgid "Itineraries"
-msgstr "Reiserouten"
+msgstr "Routes"
 
 #: landing_page/templates/landing_page/includes/intro.html:50
 msgid ""
 "Check out these itineraries for your 3-day, 5-day, and 7-day stays in Cape "
 "Town and get some tips and tricks."
 msgstr ""
-"Schauen Sie sich diese Reiserouten für Ihren 3-tägigen, 5-tägigen und "
-"7-tägigen Aufenthalt in Kapstadt an und holen Sie sich einige Tipps und "
-"Tricks."
+"Bekijk deze reisroutes voor uw 3-daagse, 5-daagse en 7-daagse verblijf in "
+"Kaapstad en krijg enkele tips en trucs."
 
 #: landing_page/templates/landing_page/includes/intro.html:52
 msgid ""
@@ -76,23 +75,23 @@ msgid ""
 "Whether you're here for a short visit or a longer stay, our itineraries "
 "offer a perfect blend of activities, sightseeing, and relaxation."
 msgstr ""
-"Entdecken Sie unsere kuratierten Reiserouten, um das Beste aus Ihrer Zeit in"
-" Kapstadt zu machen. Egal, ob Sie nur kurz oder länger hier sind, unsere "
-"Reiserouten bieten eine perfekte Mischung aus Aktivitäten, Sightseeing und "
-"Entspannung."
+"Ontdek onze samengestelde reisroutes om het meeste uit uw tijd in Kaapstad "
+"te halen. Of u hier nu bent voor een kort bezoek of een langer verblijf, "
+"onze routes bieden een perfecte mix van activiteiten, bezienswaardigheden en"
+" ontspanning."
 
 #: landing_page/templates/landing_page/includes/intro.html:55
 msgid "Click here"
-msgstr "Hier klicken"
+msgstr "Klik hier"
 
 #: landing_page/templates/landing_page/includes/intro.html:71
 #: landing_page/templates/landing_page/includes/intro.html:73
 msgid "Where to Stay"
-msgstr "Wo übernachten"
+msgstr "Waar te verblijven"
 
 #: landing_page/templates/landing_page/includes/intro.html:74
 msgid "Find the best places to stay based on your search criteria."
-msgstr "Finden Sie die besten Unterkünfte basierend auf Ihren Suchkriterien."
+msgstr "Vind de beste verblijfplaatsen op basis van uw zoekcriteria."
 
 #: landing_page/templates/landing_page/includes/intro.html:76
 msgid ""
@@ -102,31 +101,31 @@ msgid ""
 "recommendations to suit your needs. Explore our curated lists to ensure a "
 "memorable stay in Cape Town."
 msgstr ""
-"Wir helfen Ihnen, den idealen Standort basierend auf Ihren Vorlieben zu "
-"finden. Egal, ob Sie romantische Hotels für Paare, Unterkünfte mit "
-"atemberaubenden Ausblicken oder familienfreundliche Orte suchen, wir bieten "
-"detaillierte Empfehlungen, die Ihren Bedürfnissen entsprechen. Entdecken Sie"
-" unsere kuratierten Listen, um einen unvergesslichen Aufenthalt in Kapstadt "
-"zu gewährleisten."
+"Wij helpen u bij het vinden van de ideale locatie op basis van uw "
+"voorkeuren. Of u nu op zoek bent naar romantische hotels voor stelletjes, "
+"accommodaties met een adembenemend uitzicht of gezinsvriendelijke locaties, "
+"wij bieden gedetailleerde aanbevelingen die aan uw behoeften voldoen. Ontdek"
+" onze samengestelde lijsten om een ​​onvergetelijk verblijf in Kaapstad te "
+"garanderen."
 
 #: landing_page/templates/landing_page/includes/intro.html:83
 #: landing_page/templates/landing_page/includes/intro.html:85
 #: landing_page/templates/landing_page/includes/intro.html:88
 msgid "Cultural Experiences"
-msgstr "Kulturelle Erlebnisse"
+msgstr "Culturele ervaringen"
 
 #: landing_page/templates/landing_page/includes/intro.html:86
 msgid ""
 "Immerse yourself in the rich cultural heritage of Cape Town, visiting "
 "historical sites and local markets."
 msgstr ""
-"Tauchen Sie ein in das reiche kulturelle Erbe von Kapstadt, indem Sie "
-"historische Stätten und lokale Märkte besuchen."
+"Dompel jezelf onder in het rijke culturele erfgoed van Kaapstad en bezoek "
+"historische bezienswaardigheden en lokale markten."
 
 #: ⁨landing_page/templates/landing_page/includes/navbar copy.html⁩:14
 #: landing_page/templates/landing_page/includes/navbar.html:12
 msgid "Things to do"
-msgstr "Highlights"
+msgstr "Dingen om te doen"
 
 #: ⁨landing_page/templates/landing_page/includes/navbar copy.html⁩:17
 #: landing_page/templates/landing_page/includes/navbar.html:15
@@ -136,34 +135,34 @@ msgstr "Lion's Head"
 #: ⁨landing_page/templates/landing_page/includes/navbar copy.html⁩:18
 #: landing_page/templates/landing_page/includes/navbar.html:16
 msgid "Product 1"
-msgstr "Produkt 1"
+msgstr "Product 1"
 
 #: ⁨landing_page/templates/landing_page/includes/navbar copy.html⁩:19
 #: landing_page/templates/landing_page/includes/navbar.html:17
 msgid "Product 2"
-msgstr "Produkt 2"
+msgstr "Product2"
 
 #: ⁨landing_page/templates/landing_page/includes/navbar copy.html⁩:23
 #: landing_page/templates/landing_page/includes/navbar.html:21
 msgid "Photos"
-msgstr "Fotos"
+msgstr "Foto's"
 
 #: ⁨landing_page/templates/landing_page/includes/navbar copy.html⁩:47
 #: landing_page/templates/landing_page/includes/navbar.html:45
 msgid "User dashboard"
-msgstr "User Home"
+msgstr "Gebruikersdashboard"
 
 #: ⁨landing_page/templates/landing_page/includes/navbar copy.html⁩:50
 #: landing_page/templates/landing_page/includes/navbar.html:48
 msgid "Logout"
-msgstr "Ausloggen"
+msgstr "Uitloggen"
 
 #: ⁨landing_page/templates/landing_page/includes/navbar copy.html⁩:54
 #: landing_page/templates/landing_page/includes/navbar.html:52
 msgid "Log In"
-msgstr "Einloggen"
+msgstr "Log in"
 
 #: ⁨landing_page/templates/landing_page/includes/navbar copy.html⁩:57
 #: landing_page/templates/landing_page/includes/navbar.html:55
 msgid "Get Started"
-msgstr "Werde Mitglied"
+msgstr "Begin"

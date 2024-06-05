@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-05 09:23+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: dashboard/templates/dashboard/index.html:6
+msgid "Hi there, "
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:7
+msgid "Welcome to the dashboard!"
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:9
+msgid "See your favourite posts here, concatenate them into a printable PDF."
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:16
+msgid "My Favorites"
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:22
+msgid "Select"
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:23
+msgid "Type"
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:24
+msgid "Title"
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:25
+msgid "Date Added"
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:33
+msgid "Itinerary"
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:34
+msgid "Place to Stay"
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:35
+msgid "Cultural Activity"
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:36
+msgid "Blog Post"
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:50
+msgid "Print PDF with Selection"
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:51
+msgid "Delete Selected"
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:55
+msgid "To log out, click "
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:55
+msgid "here"
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:69
+msgid "Please select at least one item."
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:87
+#: dashboard/templates/dashboard/index.html:127
+msgid "AJAX Error: "
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:101
+msgid "Selected items to delete: "
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:104
+msgid "Please select at least one item to delete."
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:108
+msgid "Are you sure you want to delete the selected items?"
+msgstr ""
+
+#: dashboard/templates/dashboard/index.html:123
+msgid "There was an error deleting the selected items."
+msgstr ""

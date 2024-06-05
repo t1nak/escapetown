@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-05 09:24+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: products/models.py:76
+msgid "Itinerary"
+msgstr "Routebeschrijving"
+
+#: products/models.py:77 products/templates/products/index.html:36
+#: products/templates/products/index.html:43
+msgid "Itineraries"
+msgstr "Routes"
+
+#: products/templates/products/include/itinerary_detail.html:6
+msgid "Intro:"
+msgstr "Inleiding:"
+
+#: products/templates/products/include/itinerary_detail.html:7
+msgid "Covered Highlights:"
+msgstr "Behandelde hoogtepunten:"
+
+#: products/templates/products/include/itinerary_detail.html:9
+msgid "Details:"
+msgstr "Details:"
+
+#: products/templates/products/include/itinerary_detail.html:13
+msgid "Download PDF:"
+msgstr "Download PDF:"
+
+#: products/templates/products/include/itinerary_detail.html:13
+msgid "Download"
+msgstr "Downloaden"
+
+#: products/templates/products/include/itinerary_detail.html:16
+msgid "Gmail Link:"
+msgstr "Gmail-link:"
+
+#: products/templates/products/include/itinerary_detail.html:16
+msgid "Open Gmail"
+msgstr "Gmail openen"
+
+#: products/templates/products/include/itinerary_detail.html:19
+msgid "Tags:"
+msgstr "Tags:"
+
+#: products/templates/products/include/itinerary_detail.html:21
+msgid "Add to Favorites"
+msgstr "Toevoegen aan favorieten"
+
+#: products/templates/products/include/itinerary_detail.html:22
+msgid "Back to Itinerary List"
+msgstr "Terug naar reisplanlijst"
+
+#: products/templates/products/index.html:52
+msgid "In a nutshell:"
+msgstr "In een notendop:"
+
+#: products/templates/products/index.html:54
+msgid "Highlights:"
+msgstr "Hoogtepunten:"

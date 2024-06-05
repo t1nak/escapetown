@@ -65,14 +65,13 @@ class Itinerary(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    # New fields
-    country = models.CharField(max_length=255)
-    city = models.CharField(max_length=255)
-    travel_mode = models.CharField(max_length=10, choices=TRAVEL_MODE_CHOICES)
-    travel_budget = models.CharField(max_length=10, choices=TRAVEL_BUDGET_CHOICES)
-    travel_regions = models.TextField(blank=True)  # To add districts and other location names
+     # New fields
+    country = models.CharField(max_length=255, default='South Africa')
+    city = models.CharField(max_length=255, default='Cape Town')
+    travel_mode = models.CharField(max_length=10, choices=TRAVEL_MODE_CHOICES, default='solo')
+    travel_budget = models.CharField(max_length=10, choices=TRAVEL_BUDGET_CHOICES, default='economy')
+    travel_regions = models.TextField(blank=True, default='Cape Town central')
     
-   
     class Meta:
         verbose_name = _("Itinerary")
         verbose_name_plural = _("Itineraries")

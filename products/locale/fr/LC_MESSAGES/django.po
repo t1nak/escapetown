@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-05 09:24+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: products/models.py:76
+msgid "Itinerary"
+msgstr "Itinéraire"
+
+#: products/models.py:77 products/templates/products/index.html:36
+#: products/templates/products/index.html:43
+msgid "Itineraries"
+msgstr "Itinéraires"
+
+#: products/templates/products/include/itinerary_detail.html:6
+msgid "Intro:"
+msgstr "Introduction :"
+
+#: products/templates/products/include/itinerary_detail.html:7
+msgid "Covered Highlights:"
+msgstr "Points forts couverts :"
+
+#: products/templates/products/include/itinerary_detail.html:9
+msgid "Details:"
+msgstr "Détails:"
+
+#: products/templates/products/include/itinerary_detail.html:13
+msgid "Download PDF:"
+msgstr "Télécharger le PDF:"
+
+#: products/templates/products/include/itinerary_detail.html:13
+msgid "Download"
+msgstr "Télécharger"
+
+#: products/templates/products/include/itinerary_detail.html:16
+msgid "Gmail Link:"
+msgstr "Lien Gmail :"
+
+#: products/templates/products/include/itinerary_detail.html:16
+msgid "Open Gmail"
+msgstr "Ouvrir Gmail"
+
+#: products/templates/products/include/itinerary_detail.html:19
+msgid "Tags:"
+msgstr "Mots clés:"
+
+#: products/templates/products/include/itinerary_detail.html:21
+msgid "Add to Favorites"
+msgstr "Ajouter aux Favoris"
+
+#: products/templates/products/include/itinerary_detail.html:22
+msgid "Back to Itinerary List"
+msgstr "Retour à la liste des itinéraires"
+
+#: products/templates/products/index.html:52
+msgid "In a nutshell:"
+msgstr "En un mot:"
+
+#: products/templates/products/index.html:54
+msgid "Highlights:"
+msgstr "Points forts:"

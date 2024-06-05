@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-05 09:24+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: things_to_do/templates/things_to_do/includes/content.html:9
+#: things_to_do/templates/things_to_do/includes/content.html:15
+msgid "Lion's Head"
+msgstr "Tête de Lion"
+
+#: things_to_do/templates/things_to_do/includes/content.html:10
+msgid ""
+"Experience the breathtaking views from the iconic Lion's Head mountain in "
+"Cape Town."
+msgstr ""
+"Découvrez les vues à couper le souffle depuis l'emblématique montagne Lion's"
+" Head au Cap."
+
+#: things_to_do/templates/things_to_do/includes/content.html:20
+msgid ""
+"Lion's Head is a popular hiking destination located between Table Mountain "
+"and Signal Hill in Cape Town, South Africa. The peak forms part of a "
+"dramatic backdrop to the city and provides panoramic views of Cape Town, the"
+" Atlantic Seaboard, and the surrounding mountain ranges. The hike to the "
+"summit is moderately challenging, with some sections requiring light "
+"climbing. However, the effort is well worth it, as hikers are rewarded with "
+"stunning vistas and the opportunity to witness the sunrise or sunset from "
+"one of the most picturesque spots in the region. Whether you are an avid "
+"hiker or just looking for a memorable outdoor experience, Lion's Head is a "
+"must-visit. Remember to bring water, wear appropriate footwear, and take "
+"your time to enjoy the natural beauty along the trail."
+msgstr ""
+"Lion's Head est une destination de randonnée populaire située entre Table "
+"Mountain et Signal Hill au Cap, en Afrique du Sud. Le sommet fait partie du "
+"décor spectaculaire de la ville et offre une vue panoramique sur Le Cap, la "
+"côte atlantique et les chaînes de montagnes environnantes. La randonnée "
+"jusqu'au sommet est moyennement difficile, certaines sections nécessitant "
+"une escalade légère. Cependant, l'effort en vaut la peine, car les "
+"randonneurs sont récompensés par des vues imprenables et la possibilité "
+"d'assister au lever ou au coucher du soleil depuis l'un des endroits les "
+"plus pittoresques de la région. Que vous soyez un passionné de randonnée ou "
+"que vous recherchiez simplement une expérience de plein air mémorable, "
+"Lion's Head est une visite incontournable. N'oubliez pas d'apporter de "
+"l'eau, de porter des chaussures appropriées et de prendre votre temps pour "
+"profiter de la beauté naturelle le long du sentier."
+
+#: things_to_do/templates/things_to_do/index.html:7
+#: things_to_do/templates/things_to_do/index.html:14
+msgid "Things to Do"
+msgstr "Choses à faire"
