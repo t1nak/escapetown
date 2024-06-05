@@ -9,9 +9,6 @@
         <strong>{% trans "Details:" %}</strong>
         {{ itinerary.details|render_markdown }}
     </div>
-    <!-- {% if itinerary.image %}
-        <p><strong>{% trans "Image:" %}</strong> <img src="{{ itinerary.image.url }}" alt="{% trans "Itinerary Image" %}" style="max-width: 400px;"></p>
-    {% endif %} -->
     {% if itinerary.pdf %}
         <p><strong>{% trans "Download PDF:" %}</strong> <a href="{{ itinerary.pdf.url }}">{% trans "Download" %}</a></p>
     {% endif %}

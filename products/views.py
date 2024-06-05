@@ -6,6 +6,8 @@ from .forms import TravelPreferenceForm, ItineraryForm
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Itinerary, PlaceToStay, CulturalActivity, BlogPost, Favorite
+from django.utils.translation import get_language
+
 
 def travel_preference_view(request):
     if request.method == 'POST':
@@ -19,17 +21,17 @@ def travel_preference_view(request):
         form = TravelPreferenceForm()
     return render(request, 'travel_preference_form.html', {'form': form})
 
-def itinerary_view(request):
-    if request.method == 'POST':
-        form = ItineraryForm(request.POST)
-        if form.is_valid():
-            itinerary = form.save(commit=False)
-            itinerary.user = request.user
-            itinerary.save()
-            return redirect('success_url')  # Replace 'success_url' with your success page URL
-    else:
-        form = ItineraryForm()
-    return render(request, 'itinerary_form.html', {'form': form})
+# def itinerary_view(request):
+#     if request.method == 'POST':
+#         form = ItineraryForm(request.POST)
+#         if form.is_valid():
+#             itinerary = form.save(commit=False)
+#             itinerary.user = request.user
+#             itinerary.save()
+#             return redirect('success_url')  # Replace 'success_url' with your success page URL
+#     else:
+#         form = ItineraryForm()
+#     return render(request, 'itinerary_form.html', {'form': form})
  
 
 def blog_list_view(request):
@@ -45,8 +47,8 @@ def itinerary_list_view(request):
 @login_required
 def itinerary_detail_view(request, pk):
     itinerary = get_object_or_404(Itinerary, pk=pk)
-    return render(request, 'products/include/itinerary_detail.html', {'itinerary': itinerary})      
-
+    language = get_language()
+    return render(request, 'products/include/itinerary_detail.html', {'itinerary': itinerary, 'language': language})
 
 
 @login_required

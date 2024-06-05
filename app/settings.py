@@ -14,8 +14,8 @@ from pathlib import Path
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
  
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -126,14 +126,19 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
+
+ugettext = lambda s: s  
+
 LANGUAGES = [
-    ('en', 'English'),
-    ('de', 'German'),
-    ('es', 'Spanish'),
-    ('fr', 'French'),
-    ('zh', 'Chinese'),
-    ('pt', 'Portuguese'),
+    ('en',    '{}/{}'.format(ugettext('English'), 'English')),
+    ('de',    '{}/{}'.format(ugettext('German'), 'Deutsch')),
+    ('es',    '{}/{}'.format(ugettext('Spanish'), 'Español')),
+    ('fr',    '{}/{}'.format(ugettext('French'), 'Français')),
+    ('pt',    '{}/{}'.format(ugettext('Portuguese'), 'Português')),
+    ('zh-cn', '{}/{}'.format(ugettext('Simplified Chinese'), '简体中文')),
+    ('nl',    '{}/{}'.format(ugettext('Dutch'), 'Nederlands')),
 ]
+ 
 
 # LOCALE_PATHS = [
 #     BASE_DIR / 'locale',
