@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Run tests for the landing_page app using poetry
+echo "Running tests for the landing_page app..."
+poetry run python manage.py test landing_page/tests
+
+# Capture the exit code of the test command
+exit_code=$?
+
+if [ $exit_code -eq 0 ]; then
+    echo "All tests passed successfully."
+else
+    echo "Some tests failed. Please review the output above."
+fi
+
+# Exit with the captured exit code
+exit $exit_code

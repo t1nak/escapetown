@@ -99,6 +99,9 @@ DATABASES = {
         'PASSWORD': 'tk',
         'HOST': 'localhost',  # Or the host of your database
         'PORT': '5432',       # Default PostgreSQL port
+        'TEST': {
+            'NAME': 'test_mydb',  # Name of the test database
+        },
     }
 }
 
